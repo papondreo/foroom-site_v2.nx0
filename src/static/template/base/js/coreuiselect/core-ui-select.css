@@ -1,0 +1,245 @@
+.b-core-ui-select
+{
+position:relative;
+font-size:14px;
+line-height:40px;
+width:246px;
+height:40px;
+color:#8e8e8e;
+cursor:pointer;
+background-color:#fff;
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+box-sizing:content-box;
+}
+
+.b-core-ui-select.error
+{
+}
+
+.b-core-ui-select__select
+{
+position:static;
+width:80%;
+padding:10px;
+font-size:12px;
+line-height:18px;
+}
+
+.b-core-ui-select__value
+{
+display:block;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+padding:0 39px 0 16px;
+}
+
+.b-core-ui-select__value > span
+{
+display:inline-block;
+vertical-align:middle;
+width:12px;
+height:12px;
+margin:-3px 7px 0 0;
+}
+
+.b-core-ui-select__select_state_hide
+{
+height:1px!important;
+margin:0;
+padding:0;
+position:absolute;
+width:1px!important;
+text-indent:-9999px;
+overflow:hidden;
+opacity:0;
+z-index:-1;
+filter:alpha(opacity = 0);
+}
+
+.b-core-ui-select.open
+{
+border-bottom-color:transparent;
+}
+
+.b-core-ui-select.disabled,
+.b-core-ui-select.disabled:active
+{
+opacity:.5;
+color:#333333;
+background-color:#e6e6e6;
+background-position:0 -15px;
+transition:background-position 0.1s linear;
+}
+
+.b-core-ui-select__button
+{
+position:absolute;
+right:0px;
+top:0px;
+width:40px;
+height:40px;
+display:block;
+background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAYAAAA8sqwkAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIpJREFUeNpisbbyPMDAwCAExJ5A/JQBO5AG4u1A/I4JqlgXiPcDsQwOxfuhaoRAGjyA+CYQq2LRJAMVU4Wq8QBpeAbEjlABFSAGOVEWig9AFd+AqnnGAjXpOVRgHxBrQBWCgBJUsRNUDQMLkvXImjShYtehil/AFLGgefAFVNM2KN8LiF8iKwAIMABhex0f15MxuAAAAABJRU5ErkJggg==);
+background-position:50% 50%;
+background-repeat:no-repeat;
+}
+
+.b-core-ui-select.open .b-core-ui-select__button
+{
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAYAAADebrddAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJRJREFUeNpitLbyZEAD8UA8BYjTgHg5sgQTmkI/IJ4LxDxAvACIvXEpdgLiVUDMDMT7gZgNyrdEV2wCxOuAmB2IO6AaJwIxFxBvB2JdmGIVIN4GxPxAPAeIq6AGFALxUqj4DpA6FihDFIjXA3EGEP+HKgbRiUDMC/XLepDi10B8A4gjgPgvmod/A3EkEG8EYlaAAAMAna0Y6mhFIY4AAAAASUVORK5CYII=);
+}
+
+.b-core-ui-select__button span
+{
+display:block;
+width:0;
+height:0;
+content:"";
+margin-top:18px;
+margin-left:13px;
+}
+
+.b-core-ui-select.error .b-core-ui-select__button span
+{
+border-top:5px solid #ff0000;
+}
+
+.b-core-ui-select__dropdown
+{
+display:none;
+position:absolute;
+top:0;
+color:#818181;
+padding:4px 10px 4px 16px;
+max-height:100px;
+font-size:13px;
+border-top:none;
+background-color:#fff;
+box-sizing:content-box;
+}
+
+.b-core-ui-select__dropdown.error
+{
+}
+
+.b-core-ui-select__dropdown.hide
+{
+display:none;
+}
+
+.b-core-ui-select__dropdown.show
+{
+display:block;
+}
+
+.b-core-ui-select__dropdown__wrap
+{
+max-height:100px;
+overflow:auto;
+outline:none;
+}
+
+
+.j-scroll-pane .b-core-ui-select__dropdown__item
+{
+margin-right:20px;
+}
+
+.j-scroll-pane .b-core-ui-select__dropdown__item > span
+{
+display:inline-block;
+vertical-align:middle;
+width:12px;
+height:12px;
+margin:-3px 7px 0 0;
+-webkit-border-radius:6px;
+-moz-border-radius:6px;
+border-radius:6px;
+}
+
+.b-core-ui-select__dropdown__list
+{
+overflow:hidden;
+margin:0!important;
+padding:0px;
+}
+
+.b-core-ui-select__dropdown__item
+{
+padding:5px 0;
+min-height:18px;
+list-style-type:none;
+cursor:pointer;
+}
+
+
+.b-core-ui-select__dropdown__label
+{
+padding:10px;
+min-height:18px;
+font-style:italic;
+list-style-type:none;
+border-bottom:1px solid #ccc;
+}
+
+.b-core-ui-select__dropdown__item.disabled,
+.b-core-ui-select__dropdown__item.disabled:hover
+{
+color:#000;
+background:none;
+}
+
+.b-core-ui-select__dropdown__item.selected,
+.b-core-ui-select__dropdown__item.selected:hover
+{
+color:#3f3e4d;
+}
+
+.b-core-ui-select__dropdown__item:hover
+{
+color:#3f3e4d;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.b-core-ui-select
+	{
+	width:550px!important;
+	height:72px;
+	}
+	
+	.b-core-ui-select
+	{
+	line-height:72px;
+	font-size:22px;
+	padding-right:72px;
+	}
+	
+	.b-core-ui-select__button
+	{
+	width:72px;
+	height:72px;
+	}
+	
+	.b-core-ui-select__dropdown
+	{
+	font-size:18px;
+	}
+	
+	.b-core-ui-select__button span
+	{
+	border-top:10px solid #adadad;
+	border-right:10px solid transparent;
+	border-left:10px solid transparent;
+	}
+	
+	.b-core-ui-select__button span
+	{	
+	margin-top:34px;
+	margin-left:25px;
+	}
+}

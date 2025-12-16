@@ -1,0 +1,49 @@
+.header-basket
+{
+	float:right; width:90px; height:100%;
+	background-image:url("/images/h/indexbus.png");
+	background-repeat:no-repeat;
+	background-position:25px 31px;
+	background-color:#e6924b;
+	font-size:14px;
+	position: relative;
+}
+.header-basket::before
+{
+	content: ''; 
+    position: absolute;
+    left: -5px; bottom: 0px;
+	width: 5px;
+	height: 28px;
+	background-color:#e6924b;
+}
+.header-basket A {
+	display:block;
+	width:100%; height:100%;
+	text-decoration:none;
+}
+.header-basket A SPAN{
+	display:inline-block;
+	margin:35px 0 0 58px;
+	color:#fff;
+	font-weight:bold;
+}
+
+.header-basket-security
+{
+	float:left; width:90px; height:100%;
+	background-image:url("/images/h/control.png");
+	background-repeat:no-repeat;
+	background-position: center center;
+	/*background-color:#e6924b;*/
+	font-size:14px;
+    margin-left:40px;
+}
+.header-basket-security:HOVER {
+	background: url("/images/h/controlh.png") no-repeat scroll center center transparent;
+}
+.header-basket-security A {
+	display:block;
+	width:100%; height:100%;
+	text-decoration:none;
+}

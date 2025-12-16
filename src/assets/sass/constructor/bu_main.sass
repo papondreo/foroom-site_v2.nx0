@@ -1,0 +1,392 @@
+
+.main-loader
+  margin-top: 90px
+  text-align: center
+
+.main-loading
+  margin-left: 12px
+  color: #aaa
+
+.sk-three-bounce
+  $animationDuration: 1.4s
+  $delayRange: 0.32s
+
+  .sk-child
+    margin-left: 10px
+    width: 12px
+    height: 12px
+    background-color: #aaa
+    border-radius: 100%
+    display: inline-block
+    animation: sk-three-bounce $animationDuration ease-in-out 0s infinite both
+
+  .sk-bounce-1
+    animation-delay: -$delayRange
+
+  .sk-bounce-2
+    animation-delay: -$delayRange / 2
+
+@keyframes sk-three-bounce
+  0%, 80%, 100%
+    transform: scale(0)
+
+  40%
+    transform: scale(1)
+
+.constructor
+  margin-top: -50px
+  min-height: 500px
+  margin-bottom: 100px
+
+.constructor-header
+  margin-top: 30px
+  //margin-bottom: 18px
+
+  &__step
+    display: flex
+    align-items: center
+    height: 35px
+    font-weight: 600
+    font-size: rem(24)
+    color: $mainButtonColorHover
+
+  &__title
+    font-weight: 600
+    color: $mainFontColor
+    margin-bottom: 15px
+    text-transform: uppercase
+    font-weight: 600
+    font-size: rem(15)
+
+    @media only screen and (max-width: $colLg)
+      font-size: rem(15)
+
+.show-text
+  transition: $transition
+  &:hover
+    color: $brandMainColorLight
+
+.constructor-footer
+  margin-top: 40px
+
+.material-tabs
+  margin-top: 0 !important
+  &__tab
+    padding: 3px 15px
+    margin-right: 5px
+    margin-bottom: 5px
+    min-width: max-content
+
+    //font-family: $boldFont
+    border-radius: 5px
+    transition: $transition
+    &:hover,
+    &_active
+      color: $default-color
+      background-color: $mainButtonColor
+    &:last-of-type
+      margin-right: 0
+    &_disactive
+      background: #ebebeb !important
+      color: $mainFontColor !important
+    &_perc
+      margin-left: 7px
+      //margin-right: -15px
+      //position: relative
+      //right: 0
+      padding: 3px 7px
+      border-radius: 5px
+      background: #de0000
+      color: #fff
+
+  &__count
+    font-family: $lightFont
+
+.step-content
+  //margin-bottom: 40px
+  img
+    max-width: 100%
+    margin-bottom: 15px
+  .constructor-filter
+    padding: 15px 0 5px
+  .filters-wrapper
+    background: $default-color
+    padding: 0 15px
+    margin-bottom: 15px
+    border-radius: 5px
+    border: 1px solid #f0f0f0
+    color: #868686
+    .checkbox-group
+      margin-bottom: 15px
+
+  .checkbox-group
+    &__compl,
+    &__materials
+      align-items: flex-start
+      display: flex
+      flex-wrap: wrap
+
+    &__materials
+      // justify-content: space-between
+      //max-height: 365px
+      margin-bottom: 0
+      //overflow-y: auto
+      //overflow-x: hidden
+      // .fieldset-checkbox-img
+        // margin-right: 0 !important
+        // margin-left: 0 !important
+
+    &__materials-act
+      max-height: inherit
+      overflow: inherit
+      .fieldset-checkbox-img
+        width: calc(20% - 15px)
+.checkbox-group__compl
+  display: flex
+  flex-wrap: wrap
+.show-more__button
+  width: 100%
+.sticky
+  position: sticky
+
+.check-wrapper
+  position: sticky
+  top: 80px
+  border-radius: 5px
+
+.tar
+  //text-align: right
+  justify-content: flex-end
+  display: flex
+
+.constructor
+  .button
+    height: 35px
+    //border: 2px solid $mainButtonColor
+    border-radius: 4px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    transition: $transition
+    padding: 0 12px
+    background: $mainButtonColor
+    color: $default-color
+    &:hover
+      background: $mainButtonColorHover
+    &-next
+      padding-right: 5px
+      background: $mainButtonColor
+      color: $default-color
+      &:hover
+        background: $mainButtonColorHover
+    &-prev
+      padding-left: 5px
+      border: 1px solid $mainButtonColor
+      background: $default-color
+      color: $mainButtonColor
+      &:hover
+        background: $mainButtonColor
+        color: $default-color
+    i
+      margin: 0 7px
+
+
+      //border-color: $mainButtonColorHover
+
+.blackout-ico
+  width: 18px
+  margin: -4px 2px 0 0 !important
+
+.checkbox-group__materials
+  display: flex
+  flex-wrap: wrap
+
+//
+.slide-enter-active
+  -moz-transition-duration: 0.4s
+  -webkit-transition-duration: 0.4s
+  -o-transition-duration: 0.4s
+  transition-duration: 0.4s
+  -moz-transition-timing-function: ease-in
+  -webkit-transition-timing-function: ease-in
+  -o-transition-timing-function: ease-in
+  transition-timing-function: ease-in
+
+
+.slide-leave-active
+  -moz-transition-duration: 0.4s
+  -webkit-transition-duration: 0.4s
+  -o-transition-duration: 0.4s
+  transition-duration: 0.4s
+  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1)
+  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1)
+  -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1)
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1)
+
+
+.slide-enter-to, .slide-leave
+  max-height: 400px
+  overflow: hidden
+
+.slide-enter, .slide-leave-to
+  overflow: hidden
+  max-height: 0
+
+.fade-enter-active, .fade-leave-active
+  transition: opacity 1s
+
+.fade-enter, .fade-leave-to
+  opacity: 0
+
+
+//@media screen and (min-width: $colMd)
+//  .constructor__check_hide-on-desktop
+//    display: none !important
+
+@media screen and (max-width: $colLg)
+  .check-wrapper
+    position: fixed
+    top: 0
+    right: -370px
+    bottom: 0
+    width: 360px
+    border-radius: 0
+    background: $default-color
+    border-left: 1px solid #f0f0f0
+    box-shadow: 2px 0 8px 0 rgba(0,0,0,0.37)
+    z-index: 1000
+    transition: right .5s ease-in-out
+    //overflow: auto
+
+    &_show
+      right: 0
+
+@media screen and (max-width: $colMd)
+  .constructor
+    margin-top: -40px
+    padding-bottom: 40px
+  .fieldset-checkbox-img_left
+    margin-right: 8px
+    margin-left: 7px
+  .fieldset-checkbox-img
+    width: calc(24% - 7px)
+    margin-left: 0
+    margin-right: 15px !important
+    &:nth-child(4n + 4)
+      margin-right: 0 !important
+  .step-content .checkbox-group__materials-act .fieldset-checkbox-img
+    width: calc(25% - 15px)
+
+@media screen and (max-width: $colSm)
+  .constructor
+    margin-top: 0
+    padding-bottom: 40px
+  .constructor-footer
+    // margin-bottom: 90px
+
+  .fieldset-checkbox-img_left
+    margin-bottom: 10px
+
+  .fieldset-checkbox-img_left label span
+    font-size: 14px
+  .fieldset-checkbox-img label .img
+    margin-bottom: 5px
+@media only screen and (max-width : $colXs)
+  .fieldset-checkbox-img
+    width: calc(33% - 10px)
+    margin-right: 15px !important
+    margin-left: 0
+    &:nth-child(4n + 4)
+      margin-right: 15px !important
+    &:nth-child(3n + 3)
+      margin-right: 0 !important
+
+  .material-tabs__tab
+    padding-top: 5px
+    padding-bottom: 5px
+
+
+  .checkbox-group__hrz-scroll.checkbox-group__materials
+    margin-bottom: 0
+    .fieldset-checkbox-img
+      width: 35%
+  .checkbox-group__hrz-scroll.checkbox-group__materials-act
+    margin-bottom: 15px
+    .fieldset-checkbox-img
+      width: 35%
+
+  .checkbox-group__hrz-scroll.checkbox-group__materials,
+  .checkbox-group__hrz-scroll.checkbox-group__materials-act
+    flex-wrap: nowrap
+    width: calc(100% + 30px)
+    margin-left: -15px
+    overflow-x: auto
+    -ms-overflow-style: none
+    scrollbar-width: none
+    //overflow: -moz-scrollbars-none
+    &::-webkit-scrollbar
+      width: 0
+      background: transparent
+
+    .fieldset-checkbox-img
+      flex-shrink: 0
+
+      &:first-of-type
+        margin-left: 12px
+
+    &::after
+      display: inline-block
+      content: ''
+      width: 12px
+      height: 15px
+      flex-shrink: 0
+
+
+
+  .check-wrapper
+    right: -87%
+    width: 85%
+
+    &_show
+      right: 0
+
+.materials-search__input
+    width: 100%
+    display: block
+    padding: 4px 10px
+    font-size: 16px
+    border: 1px solid #ccc
+    border-radius: 5px
+    margin-bottom: 25px
+
+.info-tooltip
+  //width: 300px
+  background: #f5f5f5
+  border: 1px solid #eee !important
+  color: $mainFontColor
+  text-align: left
+  font-family: $lightFont
+
+.bounce-enter-active
+  animation: bounce-in .3s
+
+.bounce-leave-active
+  animation: bounce-in .3s reverse
+
+@keyframes bounce-in
+  0%
+    opacity: .6
+    transform: translateX(-30%)
+    //transform: scale(1)
+
+  100%
+    opacity: 1
+    transform: translateX(0)
+    // transform: scale(1)
+
+.fade-enter-active, .fade-leave-active
+  transition: opacity .3s
+
+.fade-enter, .fade-leave-to
+  opacity: 0

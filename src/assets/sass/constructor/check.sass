@@ -1,0 +1,461 @@
+.constructor__preview
+  position: relative
+  padding-bottom: 58% !important
+  border-radius: 5px 5px 0 0
+  overflow: hidden
+  .item-card__label
+    top: -5px
+    transform: rotate(-2deg)
+    z-index: 99
+  .item-card__label-title
+    height: auto
+    padding: 3px 30px
+    transform: rotate(1deg)
+    font-size: .9rem
+  .item-card__label-perc
+    top: 0
+    margin-top: -5px
+    font-size: .7rem
+  .rev
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    padding: 5px 15px
+    background: #aaa
+    color: #fff
+    z-index: 9
+
+  .main-img,
+  .system-img,
+  .material-img,
+  .material-preview,
+  .complColor-preview
+    position: absolute
+    top: -30px
+    right: 0
+    bottom: -45px
+    left: 0
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+
+  &_action
+    padding-bottom: 58% !important
+    .main-img,
+    .system-img,
+    .material-img,
+    .material-preview,
+    .complColor-preview
+      top: 10px
+      bottom: -45px
+  .complColor-preview
+    z-index: 11
+  .material-preview
+    z-index: 12
+
+  .rotate-material
+    position: absolute
+    bottom: 10px
+    right: 10px
+    width: 190px
+    z-index: 99
+    i
+      margin-left: 0
+
+  .zoom-material,
+  .zoom-material_desktop
+    position: absolute
+    width: 50px
+    height: 50px
+    margin: auto
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    border-radius: 50%
+    border: 3px solid #fff
+    background: $mainButtonColor
+    font-size: 24px
+    opacity: .4
+    z-index: 15
+    transition: $transition
+    i
+      color: $default-color
+
+    &:hover
+      opacity: .9 !important
+      background: $mainButtonColorHover
+  .zoom-material
+    display: none
+
+  &:hover
+    .zoom-material
+      opacity: .7
+
+
+.constructor__check
+  padding: 10px 15px
+  border: 1px solid #f0f0f0
+  border-radius: 5px
+  border-top: none
+  background: $default-color
+
+  hr
+    //display: block
+    //height: 1px
+    margin: 0 0 1px
+    background: none
+    border: none
+    border-bottom: 1px dashed #cacaca !important
+    &:last-of-type
+      border-bottom-color: #818181
+
+  p
+    padding-top: 1px
+    padding-bottom: 1px
+    /*min-height: 31px*/
+    font-weight: 300
+    font-size: 14px
+
+  .price
+    //margin-top: 10px
+    margin-top: 0
+    display: flex
+    justify-content: flex-end
+    align-items: baseline
+    p
+      //height: 40px
+      margin: 0
+      padding: 0
+      font-family: $boldFont
+      font-size: 24px
+      white-space: nowrap
+      color: $brandMainColor
+      i
+        font-size: 22px
+
+      &.red
+        color: #de0000
+    .old-price
+      height: inherit
+      padding: 0
+      margin-bottom: 0
+      margin-right: 10px
+      font-size: 16px
+      font-family: $mainFont
+      text-decoration: line-through
+      color: #aaa
+      i
+        font-size: 15px
+
+    .action
+      height: inherit
+      font-size: 15px
+      margin-top: -5px
+      margin-bottom: -5px
+      color: #de0000
+
+  .action-name
+    margin-top: -3px
+    text-transform: uppercase
+    text-align: right
+    color: #de1000
+    font-size: 12px
+    font-weight: 600
+
+  .step-title
+    //display: inline-block
+    font-weight: 500
+    color: #b9b9b9 !important
+    font-weight: 500 !important
+    padding-bottom: 0 !important
+    cursor: pointer
+    i
+      margin-left: 3px
+      font-size: 12px
+    &:hover
+      color: $brandMainColor !important
+
+  .check-step-block
+    margin-left: -5px
+    margin-right: -5px
+    padding: 0 5px
+    border-radius: 3px
+    background: #f8f8f8
+    border-top: 1px dashed #cacaca !important
+    border-bottom: 1px dashed #cacaca !important
+
+
+    &_hidden
+      height: 0
+      overflow: hidden
+      border-bottom: none !important
+      transition: .3s ease-in-out
+
+
+  .selected-item,
+  .selected-item a
+    text-align: right !important
+    font-weight: 500
+    color: $brandMainColor
+
+  .not-selected-item,
+  .not-selected-item a
+    color: #aaa
+    font-size: 13px !important
+    padding: 1px 0 !important
+
+  .right
+    text-align: right
+    p
+      text-transform: lowercase
+
+      &.system-title
+        text-transform: uppercase
+
+  .underline
+    margin: 0
+    padding: 5px 0
+    display: inline-block
+    font-size: 16px
+    font-weight: 600
+    text-decoration: underline
+    cursor: pointer
+    &:hover
+      color: $brandMainColor
+
+  .more-link
+    //margin-bottom: 10px
+    text-align: left
+    i
+      margin-right: 5px
+      font-size: 18px
+
+  .more-link__price
+    margin-top: 2px
+  .price-link
+    text-transform: capitalize !important
+    i
+      font-size: 18px
+      margin-left: 5px
+
+  .button-call
+    margin-top: 15px
+    width: 200px
+
+  @media screen and (max-width: 990px)
+    .price
+      margin-top: 0
+      p
+        font-size: 24px
+        height: auto
+        margin-bottom: 7px
+        i
+          font-size: 23px
+      .old-price
+        font-size: 18px
+        i
+          font-size: 17px
+    .more-link,
+    .more-link__price
+      font-size: 13px !important
+      margin: 0 !important
+      /*margin-bottom: 5px*/
+      font-family: $mainFont
+      i
+        margin-right: 0
+        font-size: 13px
+
+.hide-check
+  position: fixed
+  top: 0
+  right: 0
+  width: 56px
+  height: 56px
+  background: $brandMainColor
+  border-radius: 0 0 0 5px
+  z-index: 1005
+  transition: $transition
+  &:hover
+    background: $brandMainColorLight
+
+
+  .hamburger-box
+    width: 26px
+    height: 26px
+
+  &.hamburger
+    opacity: 1 !important
+    padding: 15px 15px
+    background: $brandMainColor
+    &.is-active
+      //background: none
+      .hamburger-inner,
+      .hamburger-inner::before,
+      .hamburger-inner::after
+        background-color: $default-color
+
+      .hamburger-inner::before
+        top: 4px
+      .hamburger-inner::after
+        bottom: 4px
+
+      &:hover
+        .hamburger-inner,
+        .hamburger-inner::before,
+        .hamburger-inner::after
+          transition: $transition
+          //background-color: $brandMainColorLight
+
+  .hamburger
+    &-inner,
+    &-inner::before,
+    &-inner::after
+      height: 3px
+      width: 26px
+      background-color: $default-color
+
+    &-inner::before
+      top: -9px
+    &-inner::after
+      bottom: -9px
+
+  &:hover
+    transition: $transition
+    background: $brandMainColorLight
+
+.constructor__check_mobile
+  display: none
+  position: fixed
+  min-height: 50px
+  left: 10px
+  right: 10px
+  bottom: 15px
+  padding: 5px
+  //background: $default-color
+  //border-top: 1px solid #f0f0f0
+  align-items: center
+  justify-content: center
+  z-index: 1001
+  cursor: pointer
+  border-radius: 150px
+  background: $mainGradient
+  box-shadow: 0 7px 5px 0 rgba(34, 60, 80, 0.2)
+  transition: $transition
+  &:hover
+    transform: translateY(5px)
+    box-shadow: none
+
+  button
+    width: 100%
+    padding: 3px 0 1px
+    background: $mainButtonColor
+    color: $default-color
+    text-align: center
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 600
+    transition: $transition
+
+  //&-arrow
+  //  text-align: center
+  //  color: #606060
+  //  background: #f8f8f8
+  &-wr
+    width: 100%
+    position: relative
+    padding: 0 15px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    overflow: hidden
+  &-blink
+    position: absolute
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    right: 25%
+    top: 55%
+    background: rgba($default-color, 0)
+    transition: transform .6s ease-in-out, opacity .6s ease-in-out
+    &_release
+      animation: blink 1s ease-in-out alternate
+
+    @keyframes blink
+      0%
+        background: rgba($brandMainColorLight, .1)
+      40%
+        background: rgba($brandMainColorLight, .2)
+        transform: scale(55)
+      100%
+        background: rgba($brandMainColorLight, .05)
+        transform: scale(0)
+
+
+  &-system
+    text-transform: uppercase
+    font-family: $boldFont
+    color: $default-color
+    font-size: 18px
+    span
+      display: block
+      text-transform: none
+      font-size: 12px
+  &-price
+    line-height: 1.2
+    text-align: right
+    .price
+      padding: 0
+      margin: 0
+      font-family: $boldFont
+      color: $default-color
+      font-size: 20px
+      &.red
+        color: #de0000
+      i
+        font-size: 19px
+    .old-price
+      padding: 0
+      font-size: 12px
+      text-decoration: line-through
+      color: $default-color
+      i
+        font-size: 13px
+
+
+
+@media screen and (max-width: $colLg)
+  .constructor__preview
+    border-radius: 0
+    padding-bottom: 65%
+
+    .item-card__label-title
+      font-size: .7rem !important
+    .item-card__label-perc
+      //margin-top: 0
+      font-size: .6rem !important
+
+  .constructor__check
+    border: none
+
+  .constructor__check_mobile
+    display: flex
+
+  .more-link
+    display: none !important
+
+@media screen and (max-width: $colLg)
+  .constructor__preview .rev
+    display: none
+
+  .constructor__preview
+    .zoom-material
+      display: flex
+    .zoom-material_desktop
+      display: none
+
+@media screen and (min-width: $colLg)
+  .hide-check
+    display: none
+

@@ -1,0 +1,57 @@
+.pxcheckbox-wps {
+	margin-top: -2px;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	vertical-align:top;
+	cursor: pointer;
+	background: url(img/checkbox.png);
+	margin-right: 10px;
+	background-position: 0 -18px;
+}
+.pxcheckbox-wps input.pxcheckbox {
+	display: none;
+}
+
+.pxcheckbox-wps.pxcheckbox-wps-active {
+	background-position: 0 0px;
+}
+
+.pxcheckbox-wps.pxcheckbox-wps-disabled {
+	background: url(img/checkbox_inactive.png);
+	background-position: 0 -16px;
+}
+
+.pxcheckbox-wps.pxcheckbox-wps-disabled.pxcheckbox-wps-active {
+	background-position: 0 0px;
+}
+
+
+
+.pxradio-wps {
+	margin-top: -2px;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	vertical-align:top;
+	cursor: pointer;
+	background: url(img/radio.png);
+	margin-right: 10px;
+	background-position: 0 -18px;
+}
+.pxradio-wps input.pxradio {
+	display: none;
+}
+
+.pxradio-wps.pxradio-wps-active {
+	background-position: 0 0px;
+}
+
+.pxradio-wps.pxradio-wps-disabled {
+	background: url(img/checkbox_inactive.png);
+	background-position: 0 -16px;
+}
+
+.pxradio-wps.pxradio-wps-disabled.pxradio-wps-active {
+	background-position: 0 0px;
+}

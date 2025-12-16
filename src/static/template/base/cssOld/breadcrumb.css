@@ -1,0 +1,25 @@
+.breadcrumb
+{
+margin:0 0 20px 0;
+}
+
+.breadcrumb ul
+{
+margin:0;
+padding:0;
+list-style:none;
+font-size:0;
+}
+
+.breadcrumb ul li
+{
+display:inline-block;
+vertical-align:middle;
+font-size:14px;
+}
+
+.breadcrumb ul li.sep
+{
+color:#dd7300;
+margin:0 3px;
+}

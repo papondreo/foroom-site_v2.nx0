@@ -1,0 +1,47 @@
+.mainmenu-wr
+{
+float:right;
+margin:36px 15px 0 0;
+/*position: relative;*/
+}
+
+.mainmenu-wr ul.mainmenu
+{
+margin:0;
+padding:0;
+list-style:none;
+}
+.mainmenu-wr ul B
+{
+	display: block; float: left;
+	width: 48px; height: 64px;
+	margin: -24px 0 0 10px; border: 0px solid #FFF;
+	background: url("/images/h/control.png") no-repeat scroll center center transparent;
+}
+.mainmenu-wr ul B:HOVER
+{
+	background: url("/images/h/controlh.png") no-repeat scroll center center transparent;
+}
+.mainmenu-wr ul.mainmenu li
+{
+float:left;
+margin:0 0 0 20px;
+}
+.phoneName A { display: block; text-align: center; margin: 14px 0 0 0;  }
+
+.mainmenu-wr ul.mainmenu li a,
+.mainmenu-wr ul.mainmenu li span
+{
+color:#fff;
+text-transform:uppercase;
+font-weight:bold;
+text-decoration:none;
+font-family:'Circe-Bold', Arial, Helvetica, sans-serif;
+}
+
+.mainmenu-wr ul.mainmenu li a:hover,
+.mainmenu-wr ul.mainmenu li a.selected,
+.mainmenu-wr ul.mainmenu li span
+{
+color:#efb17b;
+}

@@ -1,0 +1,57 @@
+User-agent: Yandex
+Disallow: /buy
+Disallow: /catalog/shtory-plisse/integra-plisse/*
+
+Disallow: /catalog/rulonnye-shtory/integra-slim/*
+Disallow: /catalog/rulonnye-shtory/integra-box/*
+Disallow: /catalog/rulonnye-shtory/integra-box-plus/*
+Disallow: /catalog/rulonnye-shtory/clic/*
+Disallow: /catalog/rulonnye-shtory/clic-box/*
+Disallow: /catalog/rulonnye-shtory/roll/*
+Disallow: /catalog/rulonnye-shtory/grande/*
+Disallow: /catalog/rulonnye-shtory/grande-box/*
+Disallow: /catalog/rulonnye-shtory/grande-max/*
+
+Disallow: /catalog/rulonnye-shtory-duo/integra-slim-duo/*
+Disallow: /catalog/rulonnye-shtory-duo/integra-box-duo/*
+Disallow: /catalog/rulonnye-shtory-duo/clic-duo/*
+Disallow: /catalog/rulonnye-shtory-duo/clic-box-duo/*
+Disallow: /catalog/rulonnye-shtory-duo/grande-box-duo/*
+
+Disallow: /catalog/vertikalnye-zhalyuzi/v-form/*
+Disallow: /catalog/vertikalnye-zhalyuzi/v-form-plast/*
+
+Disallow: /catalog/gorizontalnye-zhalyuzi/integra-g-form/*
+Disallow: /catalog/gorizontalnye-zhalyuzi/g-form/*
+
+Disallow: /catalog/gorizontalnye-derevyannie-zhalyuzi/wood/*
+
+Disallow: /catalog/rimskie-shtory/roma/*
+Disallow: /catalog/rimskie-shtory/integra-roma/*
+
+
+
+
+Clean-param: template&action&placement&material&sizes&step /buy/rulonnye-shtory
+Clean-param: template&action&placement&material&sizes&step /buy/shtory-plisse
+Clean-param: template&action&placement&material&sizes&step /buy/rulonnye-shtory-duo
+Clean-param: template&action&placement&material&sizes&step /buy/vertikalnye-zhalyuzi
+Clean-param: template&action&placement&material&sizes&step /buy/gorizontalnye-zhalyuzi
+Clean-param: template&action&placement&material&sizes&step /buy/rimskie-shtory
+Clean-param: template&action&placement&material&sizes&step&etext /*
+Clean-param: template&action&placement&material&sizes&step&etext /catalog/rulonnye-shtory
+Clean-param: template&action&placement&material&sizes&step&etext /partneram-foroom
+Clean-param: etext
+
+
+User-agent: Googlebot
+Disallow: /*?placement
+Disallow: /*?material
+Disallow: /*&material
+Disallow: /*?sizes
+Disallow: /*&sizes
+Disallow: /*?template
+Disallow: /*&template
+Disallow: /*?etext
+Disallow: /*?action
+Disallow: /*&action

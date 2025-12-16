@@ -1,0 +1,33 @@
+#asp-base-foto {
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #444;
+	min-height: 102px;
+	margin: 7px 0 ;
+}
+
+.artVideo {
+	background: #3b3a49;
+	height: 60px;
+	line-height: 63px;
+	padding: 0 0 0 70px;
+	font-size: 17px;
+	font-family:'Circe-Bold', Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color: #FFF;
+	position:relative;
+	-webkit-border-radius:30px;
+	-moz-border-radius:30px;
+	border-radius:30px;
+	margin: 0 3% 21px 3%;
+	/*text-align: center;*/
+}
+.manuals-block > div.artVideo:before {
+	background-position: center center;
+	position:absolute;
+	
+	top:15px;
+	left:26px;
+	
+	width:34px; height:31px;
+	background-image: url("/images/h/index-hover-i-have-video.png");
+}

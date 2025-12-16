@@ -1,0 +1,60 @@
+*{ margin: 0px; border: medium none; }
+html, body { height: 100%; width: 100%; }
+HTML{ height: 100%; }
+BODY { margin: 0px; padding: 0px; font: 0.81em/180% Arial,Helvetica,sans-serif; height:100%; }
+TABLE { border-collapse: collapse; border-spacing: 0; } 
+IMG { border: 0; }
+IMG:A { border: 0; }
+FORM{ margin:0; padding:0; }
+#himg{ position: fixed; left: 0; top: 0; width: 100%; height: 100%; }
+#himg img{ width: 100%; height: 100%; }
+/* Основные нстройки */
+#kontur { position: relative; margin: 0 auto; width: 980px; border-left: 1px dotted #444; border-right: 1px dotted #444; min-height: 100%; }
+#kontur H1 { border-bottom: 1px solid #999; padding: 9px 14px; margin: 0px; font-size: 20px; color: #444; box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); text-transform: uppercase; font-family: PT Sans Narrow; }
+/*#kontur B { float: left; border-right: 1px dotted #444; border-bottom: 1px dotted #444; border-top: 1px dotted #444; padding: 0 14px; margin: 7px 0; background-color: #FFF; color: #444; }*/
+#head { min-height: 60px; border-bottom: 1px dotted #444; }
+#bar{ display: block; margin:0; padding:0; overflow: hidden; background: #FFA500; background: #FFA500; background: linear-gradient(to top,#FFA500,#FFFFFF); border-bottom: 1px dotted #444;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#FFA500',GradientType=0);
+}
+#bar LI { display: block; margin:0; float: left; list-style: none outside none; }
+#bar LI A { display: block; padding: 8px 14px; text-decoration: none; color: #333; font-size: 14px; }
+#bar LI A:HOVER { color: #333; text-decoration: none; background: #FFC55A; background: linear-gradient(to top, #FFC55A, #FFFFFF); 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#FFC55A',GradientType=0);
+}
+#path { margin:0; padding:0; border-bottom: 1px dotted #444; overflow: hidden; }
+#content { overflow: hidden; border-bottom: 1px dotted #444; }
+#cont-left { border-right: 1px solid #444; float: left; max-width: 240px; margin-right: 14px; }
+#cont-right { border-left: 0px solid #444; float: right; max-width: 240px; margin-left: 14px; }
+#cont-base { overflow: hidden; min-width: 70px; margin: 0 14px; }
+#footer { border-bottom: 1px dotted #444; overflow: hidden; min-height: 60px; }
+
+.map_mod { border-bottom: 0px dotted #444; color: #444; overflow: hidden; }
+/*.map_mod B { float: left; border-right: 1px dotted #444; border-bottom: 1px dotted #444; border-top: 1px dotted #444; padding: 0 14px; margin: 7px 0; background-color: #FFF; color: #444; }
+*//* Название */
+.modshead { border-bottom: 1px dotted #444; overflow: hidden; }
+.modshead H3 { display: block; border: 1px dotted #444; float: left; margin: 7px 14px; padding: 4px 14px; background-color: #626262; color: #FFF; /*line-height: 130px;*/ }
+
+/* Структура страницы */
+#asp-base-description { overflow: hidden; padding: 3px; border-bottom: 2px dashed #444; position: relative; /*border-radius: 7px;*/ }
+#asp-base-description IMG { display: block; margin: 7px 14px 7px 7px; padding: 5px; float: left; border-radius: 10px; width: 90px; height: 90px; /*position: absolute;*/
+background-color: #FFF; box-shadow: 0px 0px 0px 1px #D4D5D5, 0px 0px 10px 0px rgba(0, 0, 0, 0.1); }
+#asp-base-description DIV { border: 0px solid #444; margin: 3px 14px 0 11px; font-size: 14px; font-weight: bold; text-transform: uppercase; /*font-size: 1.0em;*/ font-family: PT Sans Narrow; }
+#asp-base-manual { margin-top: 14px; border: 0px dotted #444; padding: 14px 7px; font-family: verdana,arial,sans-serif; font-size: 15px; line-height: 24px; }
+#asp-base-manual A { text-decoration: none; color: #069; }
+#asp-base-manual A:HOVER { text-decoration: underline; color: #069; }
+#asp-base-list { margin: 14px 0; padding: 0; border-top: 0px dotted #444;  }
+#asp-base-list LI { list-style: none outside none; border-bottom: 1px solid #CCC; overflow: hidden; }
+#asp-base-list LI IMG { float: left; width: 90px; height: 90px; margin: 15px 20px 15px 0px; } /* font-family: PT Sans Narrow; text-transform: uppercase; */
+#asp-base-list LI H2 { display: block; margin-top: 14px; overflow: hidden; border-top: 1px dotted #888; border-bottom: 1px dotted #888; }
+#asp-base-list LI A { text-decoration: none; display: block; color: #000; border-top: 0px dashed #000; font-size: 14px; }
+#asp-base-list LI H2 A:HOVER { color: #069; }
+#asp-base-list LI DIV { margin-top: 9px; overflow: hidden; line-height: 1.4; }
+/* 
+#asp-base-list { margin: 14px 0; padding: 0; border-top: 1px dotted #444;  }
+#asp-base-list LI { list-style: none outside none; border-bottom: 1px dotted #444; overflow: hidden; }
+#asp-base-list LI IMG { float: left; width: 90px; height: 90px; margin: 15px 20px 15px 0px; }
+#asp-base-list LI H2 { border-top: 0px dotted #888; border-bottom: 1px dotted #888; margin-top: 11px;  font-size: 17px; overflow: hidden; color: #444; }
+#asp-base-list LI H2 A { display: block; text-decoration: none; color: #000; }
+#asp-base-list LI H2 A:HOVER { color: #069; }
+#asp-base-list LI DIV { margin-top: 9px; overflow: hidden; line-height: 1.4; }
+*/

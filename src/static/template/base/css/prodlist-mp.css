@@ -1,0 +1,115 @@
+.prodlist-mp
+{
+overflow:hidden;
+/*margin-top:32px!important;
+margin-bottom:32px!important;*/
+margin: 26px 0px 26px -5%;
+}
+
+.prodlist-mp > div
+{
+/*width: 25%;*/
+width: 20%;
+float: left;
+height:95px;
+margin: 0px 0px 0px 5%;
+/*margin: 0px 0px 0px 40px;*/
+background-position:0 0;
+background-repeat:no-repeat;
+background-size:contain;
+}
+
+.prodlist-mp > div.gform
+{
+background-image:url(../img/prodlist-mp-gform.jpg) ;
+}
+
+.prodlist-mp > div.gform:hover
+{
+background-image:url(../img/prodlist-mp-gform-hover.jpg);
+background-color:#4c721d;
+}
+
+.prodlist-mp > div.vform
+{
+background-image:url(/template/base/img/prodlist-mp-vform.jpg);
+}
+
+.prodlist-mp > div.vform:hover
+{
+/*background-image:url(../img/prodlist-mp-vform-hover.jpg);*/
+background-image:url(/template/base/img/prodlist-mp-vform-hover.jpg);
+background-color:#1b6b80; 
+}
+
+.prodlist-mp > div.roll
+{
+	/*background:url(/template/base/img/prodlist-mp-roll.jpg) no-repeat scroll center center transparent;*/
+background-image:url(../img/prodlist-mp-roll.jpg);
+}
+
+.prodlist-mp > div.roll:hover
+{
+background-image:url(../img/prodlist-mp-roll-hover.jpg);
+background-color:#6e315d;
+}
+
+.prodlist-mp > div.roma
+{
+background-image:url(../img/prodlist-mp-roma.jpg);
+}
+
+.prodlist-mp > div.roma:hover
+{
+background-image:url(../img/prodlist-mp-roma-hover.jpg);
+background-color:#c7252c;
+}
+
+.prodlist-mp > div a
+{
+display:block;
+box-sizing:border-box;
+width:100%;
+height:100%;
+padding:27px;
+text-transform:uppercase;
+font-family:'Circe-Bold', Arial, Helvetica, sans-serif;
+color:#3b3a49;
+text-decoration:none;
+line-height:1.4;
+font-size:10px;
+}
+
+.prodlist-mp > div a span
+{
+font-size:18px;
+}
+
+.prodlist-mp > div a:hover
+{
+color:#fff;
+}
+
+@media only screen and (min-width: 1400px) {
+	.prodlist-mp
+	{
+	margin-top:40px!important;
+	margin-bottom:40px!important;
+	}
+	
+	.prodlist-mp > div
+	{
+	height:127px;
+	}
+	
+	.prodlist-mp > div a
+	{
+	font-size:14px;
+	padding:33px 40px;
+	}
+	
+	.prodlist-mp > div a span
+	{
+	font-size:24px;
+	}
+}

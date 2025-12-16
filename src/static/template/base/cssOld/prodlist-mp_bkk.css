@@ -1,0 +1,107 @@
+.prodlist-mp
+{
+overflow:hidden;
+margin-top:32px!important;
+margin-bottom:32px!important;
+}
+
+.prodlist-mp > div
+{
+height:95px;
+background-position:0 0;
+background-repeat:no-repeat;
+background-size:contain;
+}
+
+.prodlist-mp > div.gform
+{
+background-image:url(../img/prodlist-mp-gform.png);
+}
+
+.prodlist-mp > div.gform:hover
+{
+background-image:url(../img/prodlist-mp-gform-hover.png);
+background-color:#4c721d;
+}
+
+.prodlist-mp > div.vform
+{
+background-image:url(../img/prodlist-mp-vform.png);
+}
+
+.prodlist-mp > div.vform:hover
+{
+background-image:url(../img/prodlist-mp-vform-hover.png);
+background-color:#1b6b80;
+}
+
+.prodlist-mp > div.roll
+{
+background-image:url(../img/prodlist-mp-roll.png);
+}
+
+.prodlist-mp > div.roll:hover
+{
+background-image:url(../img/prodlist-mp-roll-hover.png);
+background-color:#6e315d;
+}
+
+.prodlist-mp > div.roma
+{
+background-image:url(../img/prodlist-mp-roma.png);
+}
+
+.prodlist-mp > div.roma:hover
+{
+background-image:url(../img/prodlist-mp-roma-hover.png);
+background-color:#c7252c;
+}
+
+.prodlist-mp > div a
+{
+display:block;
+box-sizing:border-box;
+width:100%;
+height:100%;
+padding:27px;
+text-transform:uppercase;
+font-family:'Circe-Bold', Arial, Helvetica, sans-serif;
+color:#3b3a49;
+text-decoration:none;
+line-height:1.4;
+font-size:10px;
+}
+
+.prodlist-mp > div a span
+{
+font-size:18px;
+}
+
+.prodlist-mp > div a:hover
+{
+color:#fff;
+}
+
+@media only screen and (min-width: 1400px) {
+	.prodlist-mp
+	{
+	margin-top:40px!important;
+	margin-bottom:40px!important;
+	}
+	
+	.prodlist-mp > div
+	{
+	height:127px;
+	}
+	
+	.prodlist-mp > div a
+	{
+	font-size:14px;
+	padding:33px 40px;
+	}
+	
+	.prodlist-mp > div a span
+	{
+	font-size:24px;
+	}
+}

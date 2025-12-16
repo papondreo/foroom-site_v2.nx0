@@ -1,0 +1,41 @@
+{
+  
+  "compilerOptions": {
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false, // set true!
+    "checkJs": false,
+    "types": [
+      "jest",
+      "@types/node",
+      "@nuxt/types",
+      "@nuxtjs/auth-next",
+      "cookie-universal-nuxt"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "~/*": [
+        "./*"
+      ],
+    },
+    "target": "esnext",
+    "module": "esnext",
+//    "experimentalSpecifierResolution": "node",
+    "moduleResolution": "node",
+    "lib": [
+      "esnext",
+      "esnext.asynciterable",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true
+  },
+  "exclude": ["src/*"]
+}

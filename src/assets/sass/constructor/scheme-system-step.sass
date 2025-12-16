@@ -1,0 +1,140 @@
+.constructor-header__title
+  span
+    text-transform: uppercase
+.table
+  text-align: left
+  p
+    margin-top: 3px
+    margin-bottom: 3px
+    //font-size: 20px
+
+.right
+  text-align: right
+  text-transform: lowercase
+.min
+  font-size: 15px !important
+  margin-top: -5px !important
+  color: #818181
+  font-weight: 200
+img.scheme
+  max-width: 100%
+  width: 400px
+hr
+  margin: 3px 0
+  background: #cacaca
+  height: 1px
+  border: none
+  //&:last-of-type
+  //  background: #818181
+
+.bold
+  font-family: $boldFont
+  font-size: 22px !important
+  i
+    font-size: 20px
+
+.red
+  text-align: right
+  margin-bottom: 0 !important
+  color: #de0000
+  font-family: $boldFont
+  font-size: 26px !important
+  i
+    font-size: 25px
+.price-title
+  font-family: $boldFont
+  //color: #4d4d4d
+  font-size: 20px
+.price-value
+  font-family: $boldFont
+  //color: #de0000 !important
+  font-size: 20px
+  i
+    //font-size: 15px
+.action-sale
+  margin-top: 0 !important
+  text-align: right
+  color: #de0000
+  font-family: $boldFont
+  font-size: 15px !important
+
+.sizes
+  color: #818181
+.selected-item,
+.selected-item a
+  text-align: right
+  color: $brandMainColor
+  &.system
+    text-transform: uppercase
+.fieldset-checkbox
+  margin-top: 15px
+.info
+  margin-top: 60px
+
+  p
+    //font-size: 18px
+    margin-bottom: 10px
+
+.old-price
+  margin-bottom: 0 !important
+  text-decoration: line-through
+  text-align: right
+  font-size: 18px !important
+  color: #aaa
+  i
+    font-size: 17px
+
+.aie
+  align-items: flex-end
+  display: flex
+.constructor-footer
+  display: flex
+  flex-wrap: nowrap
+  justify-content: space-between
+  margin-top: 25px
+  &>div
+    display: flex
+
+button[disabled]
+  background: #cacaca !important
+button.add-to-cart
+  padding-left: 12px
+  padding-right: 12px
+
+a.button
+  width: 200px
+  text-decoration: none
+  text-align: center
+  transition: .3s ease-in-out
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-left: 10px
+.fieldset-input
+  margin: 0 15px
+  justify-content: flex-end
+  align-items: flex-end
+  input
+    text-align: center
+    width: 75px
+    font-size: 18px
+
+.link
+  color: $brandMainColorLight
+  cursor: pointer
+  font-size: 16px !important
+  text-decoration: underline
+  span
+    text-transform: uppercase
+  &:hover
+    color: $brandMainColor
+
+
+@media screen and (max-width: $colSm)
+  .table
+    p
+      margin-top: 2px
+      margin-bottom: 2px
+      font-size: 16px
+  .min
+    font-size: 14px !important

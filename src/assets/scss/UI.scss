@@ -1,0 +1,162 @@
+.ui {
+  &-sticky {
+    position: sticky;
+    top: 0;
+  }
+  &-relative {
+    position: relative;
+  }
+
+  $margin: 60;
+  $stepOfMargin: 6;
+
+  @while $margin >= $stepOfMargin {
+    $i: $margin / $stepOfMargin;
+
+    &-mt-#{$i} {
+      margin-top: #{$margin}px !important;
+    }
+    &-mb-#{$i} {
+      margin-bottom: #{$margin}px !important;
+    }
+
+    &-mr-#{$i} {
+      margin-right: #{$margin}px !important;
+    }
+    &-ml-#{$i} {
+      margin-left: #{$margin}px !important;
+    }
+
+    $margin: $margin - $stepOfMargin
+  }
+
+  &-link {
+    text-decoration: underline;
+
+    &_orange {
+      color: $brand-orange-light;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &-button {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #f9a134;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    color: #f5f5f5;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      background-color: $brand-orange-light;
+    }
+
+    &[disabled] {
+      cursor: not-allowed;
+      background: #aaa;
+    }
+
+    &_border {
+      background-color: #ffffff;
+      color: #f9a134;
+      border: 1px solid #f9a134;
+
+      &:hover {
+        color: #ffffff;
+        background-color: $brand-orange-light;
+        border-color: $brand-orange-light;
+      }
+    }
+  }
+  &-text-uppercase {
+    text-transform: uppercase;
+  }
+  &-text-left {
+    text-align: left !important;
+  }
+  &-text-center {
+    text-align: center;
+  }
+  &-text-right {
+    text-align: right;
+  }
+  &-font-weight{
+    &-100{
+      font-weight: 100;
+    }
+    &-200{
+      font-weight: 200;
+    }
+    &-400{
+      font-weight: 400;
+    }
+  }
+  &-color {
+    &-brand-orange {
+      color: $brand-orange;
+    }
+    &-brand-orange__light {
+      color: $brand-orange-light;
+    }
+    &-brand-deepblue {
+      color: $brand-deep-blue;
+    }
+    &-brand-rolo {
+      color: $brand-rolo;
+    }
+    &-brand-duo {
+      color: $brand-rolo;
+    }
+    &-brand-plisse {
+      color: $brand-plisse;
+    }
+    &-brand-roma {
+      color: $brand-roma;
+    }
+    &-brand-vblinds {
+      color: $brand-vblinds;
+    }
+    &-brand-hblinds {
+      color: $brand-hblinds;
+    }
+    &-brand-profileCornices {
+      color: $brand-profileCornices;
+    }
+  }
+
+  &-bg {
+    &-brand-orange {
+      background-color: $brand-orange;
+    }
+    &-brand-orange__light {
+      background-color: $brand-orange-light;
+    }
+    &-brand-deepblue {
+      background-color: $brand-deep-blue;
+    }
+    &-brand-rolo {
+      background-color: $brand-rolo;
+    }
+    &-brand-duo {
+      background-color: $brand-rolo;
+    }
+    &-brand-plisse {
+      background-color: $brand-plisse;
+    }
+    &-brand-roma {
+      background-color: $brand-roma;
+    }
+    &-brand-vblinds {
+      background-color: $brand-vblinds;
+    }
+    &-brand-hblinds {
+      background-color: $brand-hblinds;
+    }
+    &-brand-profileCornices {
+      background-color: $brand-profileCornices;
+    }
+  }
+}
